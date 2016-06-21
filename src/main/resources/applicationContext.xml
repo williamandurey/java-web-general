@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+	
+<!-- for contructor based injection  -->
+<!--
+	<bean id="MyXMLApp" class="com.journaldev.spring.di.consumer.MyXMLApplication">
+		<constructor-arg>
+			<bean class="com.william.spring.di.service.TwitterService" />
+		</constructor-arg>
+	</bean>
+-->
+
+	<bean id="TwitterService" class="com.william.spring.di.service.TwitterService"></bean>
+	<bean id="MyApplicationWithXml" class="com.william.spring.di.consumer.MyApplicationWithXml">
+		<property name="service" ref="TwitterService"></property>
+	</bean>
+	
+</beans>

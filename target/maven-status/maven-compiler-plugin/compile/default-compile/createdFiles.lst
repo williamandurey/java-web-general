@@ -1,0 +1,8 @@
+com\william\spring\di\consumer\MyApplicationWithAnnotation.class
+com\william\spring\di\service\EmailService.class
+com\william\spring\di\client\ClientApplicationWithAnnotation.class
+com\william\spring\di\client\ClientApplicationWithXmlConfiguration.class
+com\william\spring\di\service\TwitterService.class
+com\william\spring\di\consumer\MyApplicationWithXml.class
+com\william\spring\di\service\MessageService.class
+com\william\spring\di\configuration\DIConfiguration.class
